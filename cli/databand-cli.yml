@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/databand-ai/dbnd
+notes: >-
+  DBND ships a first-party `dbnd` CLI as a console entry point of the core `dbnd`
+  Python package (console_scripts: `dbnd = dbnd:dbnd_main`). The command surface
+  below is grounded in the CLI source under modules/dbnd/src/dbnd/_core/cli and
+  orchestration/dbnd-run/src/dbnd_run/cli. The run/execute/scheduler/heartbeat
+  commands are registered only when the optional `dbnd-run` package is installed.
+name: dbnd
+binary: dbnd
+install:
+  - method: pip
+    command: pip install dbnd
+  - method: pip
+    command: pip install dbnd-run   # enables run/execute/scheduler/heartbeat commands
+entrypoint: dbnd:dbnd_main
+command_groups:
+  - group: tracker
+    description: Tracker commands to ensure synchronization against the Databand webserver.
+    source: modules/dbnd/src/dbnd/_core/cli/cmd_tracker.py
+  - group: alerts
+    description: Create, list, and manage job/pipeline alerts in the Databand app.
+    source: modules/dbnd/src/dbnd/cli/cmd_alerts.py
+  - group: airflow-sync
+    description: Sync Apache Airflow DAG/run metadata into Databand.
+    source: modules/dbnd/src/dbnd/cli/cmd_airflow_sync.py
+  - group: show-configs
+    description: Show the resolved DBND configuration.
+    source: modules/dbnd/src/dbnd/_core/cli/cmd_show.py
+  - group: run
+    description: Run a DBND task/pipeline (--set key=value overrides). Requires dbnd-run.
+    source: orchestration/dbnd-run/src/dbnd_run/cli/cmd_run.py
+  - group: execute
+    description: Low-level task execution (task, task_submit, task_execute). Requires dbnd-run.
+    source: orchestration/dbnd-run/src/dbnd_run/cli/cmd_execute.py
+  - group: project-init
+    description: Initialize a new DBND project scaffold. Requires dbnd-run.
+    source: orchestration/dbnd-run/src/dbnd_run/cli/cmd_project.py
+  - group: scheduler
+    description: Manage DBND scheduled jobs. Requires dbnd-run.
+    source: orchestration/dbnd-run/src/dbnd_run/cli/cmd_scheduler_management.py
+  - group: heartbeat
+    description: Send a run heartbeat to the Databand webserver. Requires dbnd-run.
+    source: orchestration/dbnd-run/src/dbnd_run/cli/cmd_heartbeat.py

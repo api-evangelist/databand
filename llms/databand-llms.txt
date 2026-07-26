@@ -1,0 +1,26 @@
+# Databand (DBND)
+
+> DBND (Databand) is an open-source Python framework — a library, a set of APIs, and a CLI — for building, tracking, and observing data pipelines across ingestion, preparation, ETL/ELT, and machine-learning workflows. It collects pipeline metadata (runs, metrics, dataframes, schemas) to give data-engineering teams a system of record for detecting pipeline failures and data-quality issues. Databand was acquired by IBM in 2022 and is now IBM Databand, part of IBM's data-observability offering; the open-source DBND SDK remains published on PyPI and GitHub.
+
+## Docs
+- [DBND / IBM Databand documentation](https://www.ibm.com/docs/en/dobd): Product docs, quickstart, and integration guides (IBM-hosted).
+- [Legacy DBND SDK docs (readme.io)](https://dbnd.readme.io/): Open-source DBND SDK docs and changelog.
+- [IBM Databand product page](https://www.ibm.com/products/watsonx-data-integration/data-observability): Data observability product overview.
+
+## Source
+- [databand-ai on GitHub](https://github.com/databand-ai): Databand open-source org.
+- [dbnd framework repository](https://github.com/databand-ai/dbnd): Core DBND SDK, plugins, and CLI source.
+
+## Packages
+- [dbnd on PyPI](https://pypi.org/project/dbnd/): pip install dbnd — core SDK, APIs, and CLI.
+- [dbnd-run on PyPI](https://pypi.org/project/dbnd-run/): Orchestration/run engine.
+- [dbnd-airflow on PyPI](https://pypi.org/project/dbnd-airflow/): Apache Airflow integration.
+- [dbnd-spark on PyPI](https://pypi.org/project/dbnd-spark/): Apache Spark integration.
+- [dbnd-datastage-monitor on PyPI](https://pypi.org/project/dbnd-datastage-monitor/): IBM DataStage monitor.
+- [dbnd-dbt-monitor on PyPI](https://pypi.org/project/dbnd-dbt-monitor/): dbt Cloud monitor.
+
+## Artifacts
+- [Packages](https://raw.githubusercontent.com/api-evangelist/databand/refs/heads/main/packages/databand-packages.yml): First-party DBND PyPI package/SDK family.
+- [CLI](https://raw.githubusercontent.com/api-evangelist/databand/refs/heads/main/cli/databand-cli.yml): The `dbnd` command surface.
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/databand/refs/heads/main/changelog/databand-changelog.yml): Recent DBND release history.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/databand/refs/heads/main/security/databand-domain-security.yml): Probed TLS/DNS posture for databand.ai.

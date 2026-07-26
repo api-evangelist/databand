@@ -1,0 +1,148 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/user/databand/
+notes: >-
+  DBND (Databand) is distributed as an open-source Python framework and a family
+  of first-party plugin packages on PyPI, all published under the databand-ai org
+  and versioned in lockstep (current 1.0.34.1). All packages are official.
+  No JavaScript/Java/.NET/Go client libraries are published — DBND is a
+  Python-only SDK/CLI.
+packages:
+  - language: python
+    registry: pypi
+    name: dbnd
+    url: https://pypi.org/project/dbnd/
+    install: pip install dbnd
+    version: 1.0.34.1
+    official: true
+    description: >-
+      Core DBND SDK — Python library, APIs, and CLI for building and tracking
+      data pipelines (Machine Learning Orchestration).
+  - language: python
+    registry: pypi
+    name: databand
+    url: https://pypi.org/project/databand/
+    install: pip install databand
+    version: 1.0.34.1
+    official: true
+    description: Umbrella meta-package alias for the DBND SDK.
+  - language: python
+    registry: pypi
+    name: dbnd-run
+    url: https://pypi.org/project/dbnd-run/
+    install: pip install dbnd-run
+    version: 1.0.34.1
+    official: true
+    description: DBND orchestration/run engine (adds the run/execute/scheduler CLI).
+  - language: python
+    registry: pypi
+    name: dbnd-airflow
+    url: https://pypi.org/project/dbnd-airflow/
+    install: pip install dbnd-airflow
+    version: 1.0.34.1
+    official: true
+    description: Apache Airflow integration for DBND tracking and orchestration.
+  - language: python
+    registry: pypi
+    name: dbnd-airflow-monitor
+    url: https://pypi.org/project/dbnd-airflow-monitor/
+    install: pip install dbnd-airflow-monitor
+    version: 1.0.34.1
+    official: true
+    description: Airflow monitor that syncs Airflow metadata into the Databand app.
+  - language: python
+    registry: pypi
+    name: dbnd-monitor
+    url: https://pypi.org/project/dbnd-monitor/
+    install: pip install dbnd-monitor
+    version: 1.0.34.1
+    official: true
+    description: Shared monitor framework for the DBND integration monitors.
+  - language: python
+    registry: pypi
+    name: dbnd-datastage-monitor
+    url: https://pypi.org/project/dbnd-datastage-monitor/
+    install: pip install dbnd-datastage-monitor
+    version: 1.0.12.18
+    official: true
+    description: IBM DataStage monitor integration for Databand.
+  - language: python
+    registry: pypi
+    name: dbnd-dbt-monitor
+    url: https://pypi.org/project/dbnd-dbt-monitor/
+    install: pip install dbnd-dbt-monitor
+    version: 1.0.12.18
+    official: true
+    description: dbt Cloud monitor integration for Databand.
+  - language: python
+    registry: pypi
+    name: dbnd-spark
+    url: https://pypi.org/project/dbnd-spark/
+    install: pip install dbnd-spark
+    version: 1.0.34.1
+    official: true
+    description: Apache Spark integration for DBND (PySpark metrics/tracking).
+  - language: python
+    registry: pypi
+    name: dbnd-databricks
+    url: https://pypi.org/project/dbnd-databricks/
+    install: pip install dbnd-databricks
+    version: 1.0.34.1
+    official: true
+    description: Databricks orchestration integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-aws
+    url: https://pypi.org/project/dbnd-aws/
+    install: pip install dbnd-aws
+    version: 1.0.34.1
+    official: true
+    description: AWS (S3/EMR) integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-gcp
+    url: https://pypi.org/project/dbnd-gcp/
+    install: pip install dbnd-gcp
+    version: 1.0.34.1
+    official: true
+    description: Google Cloud integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-azure
+    url: https://pypi.org/project/dbnd-azure/
+    install: pip install dbnd-azure
+    version: 1.0.34.1
+    official: true
+    description: Microsoft Azure integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-docker
+    url: https://pypi.org/project/dbnd-docker/
+    install: pip install dbnd-docker
+    version: 1.0.34.1
+    official: true
+    description: Docker/Kubernetes task execution integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-hdfs
+    url: https://pypi.org/project/dbnd-hdfs/
+    install: pip install dbnd-hdfs
+    version: 1.0.34.1
+    official: true
+    description: HDFS filesystem integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-qubole
+    url: https://pypi.org/project/dbnd-qubole/
+    install: pip install dbnd-qubole
+    version: 1.0.34.1
+    official: true
+    description: Qubole integration for DBND.
+  - language: python
+    registry: pypi
+    name: dbnd-tensorflow
+    url: https://pypi.org/project/dbnd-tensorflow/
+    install: pip install dbnd-tensorflow
+    version: 1.0.34.1
+    official: true
+    description: TensorFlow metrics tracking integration for DBND.

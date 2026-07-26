@@ -1,8 +1,16 @@
 aid: databand
 name: Databand
-description: 'Databand is a company surfaced as a portfolio company of accel, bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  DBND (Databand) is an open-source Python framework — a library, a set of APIs,
+  and a CLI — for building, tracking, and observing data pipelines across data
+  ingestion, preparation, ETL/ELT, and machine-learning workflows. It collects
+  pipeline metadata (runs, metrics, dataframes, schemas) to give data-engineering
+  teams a system of record for runs and to detect pipeline failures and data
+  quality issues before they hit downstream consumers. The DBND SDK integrates
+  with Apache Airflow, Apache Spark, Databricks, dbt, and IBM DataStage. Databand
+  was acquired by IBM in 2022 and is now IBM Databand, part of IBM's data
+  observability offering; the open-source DBND SDK remains published on PyPI and
+  GitHub under the databand-ai organization.
 url: https://raw.githubusercontent.com/api-evangelist/databand/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +19,35 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-acquired-by: IBM (2022)
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/48434944
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Enterprise
+- Data Observability
+- Data Engineering
+- Data Pipelines
+- Data Quality
+- DataOps
+- Machine Learning
+- Open Source
+- SDK
+- CLI
+- IBM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +57,34 @@ maintainers:
 common:
 - type: Website
   url: https://databand.ai/
+- type: Homepage
+  url: https://www.ibm.com/products/watsonx-data-integration/data-observability
+- type: Documentation
+  url: https://www.ibm.com/docs/en/dobd
+- type: GettingStarted
+  url: https://www.ibm.com/docs/en/dobd
+- type: DeveloperPortal
+  url: https://dbnd.readme.io/
+- type: GitHubOrganization
+  url: https://github.com/databand-ai
+- type: SourceCode
+  url: https://github.com/databand-ai/dbnd
+- type: Support
+  url: mailto:contact@databand.ai
+- type: Packages
+  url: packages/databand-packages.yml
+- type: SDKs
+  url: packages/databand-packages.yml
+- type: CLI
+  url: cli/databand-cli.yml
+- type: ChangeLog
+  url: changelog/databand-changelog.yml
+- type: DomainSecurity
+  url: security/databand-domain-security.yml
+- type: LLMsTxt
+  url: llms/databand-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
