@@ -80,6 +80,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/ibm/
+  name: IBM
+  x-relationship: acquired
+  x-evidence: "Databand was acquired by IBM in 2022 and is now IBM Databand, part of IBM's data observability offering; the open-source DBND SDK remains published on PyPI and GitHub under the databand-ai organization."
 - type: IssueTracker
   url: https://github.com/databand-ai/dbnd/issues
 - type: ContributionGuide
