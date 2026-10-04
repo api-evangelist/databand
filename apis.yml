@@ -55,8 +55,8 @@ tags:
 - Data Pipeline
 - Data Quality
 - DataOps
-- Machine-Learning
-- Open-Source
+- Machine Learning
+- Open Source
 - SDK
 - CLI
 - IBM
@@ -73,6 +73,8 @@ tags_raw:
 - SDK
 - CLI
 - IBM
+- Machine-Learning
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
